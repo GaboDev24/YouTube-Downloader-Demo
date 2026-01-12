@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/responsive.css">
+
+  <title>Descargador de videos</title>
+</head>
+<body>
+  <div class="container">
+    <h1>YouTube Downloader By GaboDev</h1>
+
+    <input id="url" placeholder="Pega el link del video">
+    <button onclick="loadInfo()">Cargar video</button>
+
+    <div id="info" class="hidden">
+        <img id="thumb">
+        <h3>Título:</h3>
+        <h2 id="title"></h2>
+
+        <h3>Calidad:</h3>
+        <select id="quality"></select>
+
+        <div class="actions">
+        <button id="videoBtn">Descargar video</button>
+        <button id="audioBtn">Descargar audio</button>
+        </div>
+        <progress id="progress" value="0" max="100" class="hidden"></progress>
+    </div>
+  </div>
+  <script src="/js/script.js"></script>
+</body>
+</html>
