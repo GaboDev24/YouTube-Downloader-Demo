@@ -6,6 +6,7 @@ const fs = require('fs');
 const app = express();
 const PORT = 3000;
 
+// INSTALAR YTDLP EN UN "VENV" DE PYTHON (pip install yt-dlp)
 const YTDLP_PATH = path.join(__dirname, 'venv', 'Scripts', 'yt-dlp.exe');
 const DOWNLOADS_DIR = path.join(__dirname, 'downloads');
 
