@@ -1,3 +1,45 @@
-node_modules
-venv
+# ── Python ────────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+*.egg
+MANIFEST
+
+# PyInstaller
+*.spec
+# Uncomment to keep main.spec tracked:
+# !main.spec
+
+# ── App-specific ──────────────────────────────────────────────────────────────
 downloads/*
+!downloads/.gitkeep
+
+# ── Node (if any tooling) ─────────────────────────────────────────────────────
+node_modules/
+
+# ── IDE / OS ──────────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── Logs ──────────────────────────────────────────────────────────────────────
+*.log
